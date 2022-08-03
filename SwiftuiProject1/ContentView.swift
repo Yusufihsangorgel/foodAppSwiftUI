@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isFavorite = "heart"
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            Text("Hello World")
+                .navigationTitle("Aşcım")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading){
+                        Button(action: {
+                   
+                        }) {
+                            Label("Favorite", systemImage: isFavorite)
+                        }
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing){
+                        Button(action: {
+                            print("Button 2 Clicked")
+                        }) {
+                            Label("Profile", systemImage: "person.fill")
+                        }
+                    }
+                }
+        }
+
     }
 }
 
