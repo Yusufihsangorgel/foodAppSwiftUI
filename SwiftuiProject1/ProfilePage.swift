@@ -50,18 +50,11 @@ struct ProfilePage : View {
                     TextField("Ad", text: $firstName)
                         .textFieldStyle(OvalTextFieldStyle())
                        
-                    TextField("Soyad", text: $lastName)
-                        .textFieldStyle(OvalTextFieldStyle())
-                       
-                    
-                    Button(action: {
+                    myTextField(label: "Soyad", text: $lastName)
                         
-                    }){
-                        Text("Kaydet")
-                            .foregroundColor(.gray)
-                            .fontWeight(.bold)
-                    }
-                    .buttonStyle(OrangeButtonStyle())
+                    myButton(buttonText: "Kaydet", action: {print("basıldı")} )
+                    
+                  
                 }.padding()
             }
             .navigationBarTitle("Try it!", displayMode: .automatic)
@@ -70,26 +63,8 @@ struct ProfilePage : View {
     }
 }
 
-struct OvalTextFieldStyle: TextFieldStyle {
-    func _body(configuration: TextField<Self._Label>) -> some View {
-        configuration
-            .padding(10)
-            .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color("CustomOrange")]), startPoint: .topLeading, endPoint: .bottomTrailing))
-            .cornerRadius(10)
-            .shadow(color: .black, radius: 5)
-            
-    }
-}
 
-struct OrangeButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .padding()
-            .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color("CustomOrange")]), startPoint: .topLeading, endPoint: .bottomTrailing))
-            .foregroundColor(.white)
-            .clipShape(Capsule())
-    }
-}
+
 
 
 
