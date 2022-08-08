@@ -1,11 +1,3 @@
-//
-//  ExampleView11.swift
-//  StepperView_Example
-//
-//  Created by Venkatnarayansetty, Badarinath on 4/3/21.
-//  Copyright © 2021 CocoaPods. All rights reserved.
-//
-
 import SwiftUI
 import UIKit
 import StepperView
@@ -14,40 +6,73 @@ let customGreen = UIColor(red: 0.00, green: 0.80, blue: 0.66, alpha: 1.00)
 
 
 struct AddRecipe: View {
-  
+    @StateObject var viewModel = RecipeViewModel()
+  @State private var foodName = ""
+    @State private var recipe = ""
+    @State private var image = ""
 
+    
+    
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
+       }
         
-        let indicationTypes1 = [
-               StepperIndicationType<NumberedCircleView>.animation(NumberedCircleView(text: "1")),
-                                                       .animation(NumberedCircleView(text: "2")),
-                                                       .animation(NumberedCircleView(text: "3")),
-                                                      ]
-
-        
-        let set3 = [ TextView(text:"Yemek Adı"),
-                     TextView(text:"Tarifi"),
-                     TextView(text:"Fotoğrafı"),
-                     ]
+   
+    
         
         var body: some View {
             NavigationView {
-                ScrollView(Axis.Set.vertical, showsIndicators: false) {
-                    VStack(spacing: 10) {
-                       
-                  
-                        StepperView()
-                            .addSteps(self.set3)
-                            .indicators(self.indicationTypes1)
-                            .spacing(30)
-                            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-                            .loadingAnimationTime(0.02) 
-                            .offset(x: UIScreen.main.bounds.size.width / 4)
+        
+                Form {
+                    Group{
+                        Section{
+                            Text("Lütfen yemek bilgilerini giriniz")
+//                                .font(.system(Font.TextStyle.headline, design: .rounded))
+//                                .foregroundColor(Color("CustomOrange"))
+                            
+                        }
                     }
+       
                     
+                    
+                    
+                    ScrollView(Axis.Set.vertical, showsIndicators: true) {
+                        VStack() {
+                            Spacer(minLength: 50.0)
+                            StepperView()
+                                .addSteps(viewModel.steps)
+                                .indicators(viewModel.indicators)
+                                    .stepIndicatorMode(StepperMode.horizontal)
+                                    .lineOptions(StepperLineOptions.rounded(2, 8, Color.black))
+                                    .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .pending])
+                                    .spacing(50)
+                            Group{
+                                Spacer(minLength: 50.0)
+                                myTextField(label: "Yemek Adı", text: $foodName)
+                          
+                                myTextField(label: "Tarifi", text: $recipe)
+                     
+                                myTextField(label: "Fotoğrafı", text: $image)
+                            }
+                            .padding([.bottom, .horizontal], 20)
+                          
+                            myButton(buttonText: "Onayla", action: {
+                                self.addNewFood()
+                            } )
+                         
+                        }
+                        
+                    }
+                    .navigationBarTitle("Yemek Ekle", displayMode: .automatic)
+                    .navigationViewStyle(StackNavigationViewStyle())
+                    .foregroundColor(Color("CustomOrange"))
                 }
-                .navigationBarTitle("StepperView")
+                
             }
         }
+    
+    
+    
 }
 
 struct AddRecipe_Previews: PreviewProvider {

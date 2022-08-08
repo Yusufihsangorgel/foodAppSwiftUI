@@ -13,3 +13,8 @@ struct FoodModel : Identifiable {
     var recipe: String
     var image: String
 }
+
+
+
+
+
