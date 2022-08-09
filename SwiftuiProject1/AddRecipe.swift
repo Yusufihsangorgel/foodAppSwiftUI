@@ -57,7 +57,7 @@ struct AddRecipe: View {
                             .padding([.bottom, .horizontal], 20)
                           
                             myButton(buttonText: "Onayla", action: {
-                                self.addNewFood()
+                                self.viewModel.addNewFood(foodName: foodName, recipe: recipe, image: image)
                             } )
                          
                         }

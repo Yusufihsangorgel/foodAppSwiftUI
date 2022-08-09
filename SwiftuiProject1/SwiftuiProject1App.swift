@@ -10,7 +10,7 @@ import SwiftUI
 struct SwiftuiProject1App: App {
     var body: some Scene {
         WindowGroup {
-           InitialPage()
+            Splash()
         }
     }
 }

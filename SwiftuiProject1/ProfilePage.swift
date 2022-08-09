@@ -57,7 +57,7 @@ struct ProfilePage : View {
                   
                 }.padding()
             }
-            .navigationBarTitle("Try it!", displayMode: .automatic)
+            .navigationBarTitle("Profil", displayMode: .automatic)
             .navigationViewStyle(StackNavigationViewStyle())
         }
     }

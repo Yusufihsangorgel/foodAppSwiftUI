@@ -34,7 +34,7 @@ final class RecipeViewModel : ObservableObject {
         }
         let newFoodModelResult = FoodModel(foodName: foodName,recipe: recipe, image: image)
         foods.append(newFoodModelResult)
-       let  foodName = ""
+       let foodName = ""
        let recipe = ""
        let image = ""
     }

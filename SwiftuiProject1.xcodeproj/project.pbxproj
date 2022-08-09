@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		335305A628A2648500CA6544 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335305A528A2648500CA6544 /* Splash.swift */; };
+		335305A828A26D0900CA6544 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335305A728A26D0900CA6544 /* HomeModel.swift */; };
+		335305AA28A2B51400CA6544 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335305A928A2B51400CA6544 /* HomeViewModel.swift */; };
+		335305AC28A2D64500CA6544 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335305AB28A2D64500CA6544 /* RecipeView.swift */; };
+		335305AE28A2E2BD00CA6544 /* myRecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335305AD28A2E2BD00CA6544 /* myRecipeCard.swift */; };
 		33605864289BB0D600136EB1 /* myTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605863289BB0D600136EB1 /* myTextField.swift */; };
 		33605867289BB21200136EB1 /* myButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605866289BB21200136EB1 /* myButton.swift */; };
 		3360586C289BE9CE00136EB1 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3360586B289BE9CE00136EB1 /* RecipeViewModel.swift */; };
 		3360586E289BF21800136EB1 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3360586D289BF21800136EB1 /* RecipeModel.swift */; };
 		33605871289C905300136EB1 /* StepperView in Frameworks */ = {isa = PBXBuildFile; productRef = 33605870289C905300136EB1 /* StepperView */; };
 		3367D31F289B372400EB978B /* SwiftuiProject1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367D31E289B372400EB978B /* SwiftuiProject1App.swift */; };
-		798C3FFE2895B61B0051BF6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C3FFD2895B61B0051BF6B /* ContentView.swift */; };
 		798C40002895B61E0051BF6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798C3FFF2895B61E0051BF6B /* Assets.xcassets */; };
 		798C40032895B61E0051BF6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798C40022895B61E0051BF6B /* Preview Assets.xcassets */; };
 		79D71D4828970A4300E1D749 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D71D4728970A4300E1D749 /* ProfilePage.swift */; };
@@ -24,13 +28,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		335305A528A2648500CA6544 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		335305A728A26D0900CA6544 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		335305A928A2B51400CA6544 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		335305AB28A2D64500CA6544 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		335305AD28A2E2BD00CA6544 /* myRecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myRecipeCard.swift; sourceTree = "<group>"; };
 		33605863289BB0D600136EB1 /* myTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTextField.swift; sourceTree = "<group>"; };
 		33605866289BB21200136EB1 /* myButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myButton.swift; sourceTree = "<group>"; };
 		3360586B289BE9CE00136EB1 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		3360586D289BF21800136EB1 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		3367D31E289B372400EB978B /* SwiftuiProject1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiProject1App.swift; sourceTree = "<group>"; };
 		798C3FF82895B61B0051BF6B /* SwiftuiProject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftuiProject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		798C3FFD2895B61B0051BF6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		798C3FFF2895B61E0051BF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		798C40022895B61E0051BF6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79D71D4728970A4300E1D749 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
@@ -56,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				3360586B289BE9CE00136EB1 /* RecipeViewModel.swift */,
+				335305A928A2B51400CA6544 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -64,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				3360586D289BF21800136EB1 /* RecipeModel.swift */,
+				335305A728A26D0900CA6544 /* HomeModel.swift */,
 			);
 			name = Models;
 			path = ViewModels;
@@ -81,6 +91,7 @@
 			children = (
 				33605863289BB0D600136EB1 /* myTextField.swift */,
 				33605866289BB21200136EB1 /* myButton.swift */,
+				335305AD28A2E2BD00CA6544 /* myRecipeCard.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -89,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				79D71D4928970A5400E1D749 /* HomePage.swift */,
+				335305AB28A2D64500CA6544 /* RecipeView.swift */,
 				79D71D4D28970AA200E1D749 /* AddRecipe.swift */,
 				79D71D4B28970A6C00E1D749 /* Notifications.swift */,
 				79D71D4728970A4300E1D749 /* ProfilePage.swift */,
@@ -116,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				3367D31E289B372400EB978B /* SwiftuiProject1App.swift */,
+				335305A528A2648500CA6544 /* Splash.swift */,
 				79D71D4F28970B6100E1D749 /* InitialPage.swift */,
-				798C3FFD2895B61B0051BF6B /* ContentView.swift */,
 				798C3FFF2895B61E0051BF6B /* Assets.xcassets */,
 				33605869289BE67900136EB1 /* Models */,
 				3360586A289BE72900136EB1 /* Services */,
@@ -213,16 +225,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335305A828A26D0900CA6544 /* HomeModel.swift in Sources */,
+				335305AE28A2E2BD00CA6544 /* myRecipeCard.swift in Sources */,
 				79D71D4C28970A6C00E1D749 /* Notifications.swift in Sources */,
+				335305A628A2648500CA6544 /* Splash.swift in Sources */,
 				79D71D4E28970AA200E1D749 /* AddRecipe.swift in Sources */,
 				3360586E289BF21800136EB1 /* RecipeModel.swift in Sources */,
 				33605864289BB0D600136EB1 /* myTextField.swift in Sources */,
 				3367D31F289B372400EB978B /* SwiftuiProject1App.swift in Sources */,
 				33605867289BB21200136EB1 /* myButton.swift in Sources */,
+				335305AA28A2B51400CA6544 /* HomeViewModel.swift in Sources */,
 				79D71D4A28970A5400E1D749 /* HomePage.swift in Sources */,
+				335305AC28A2D64500CA6544 /* RecipeView.swift in Sources */,
 				79D71D5028970B6100E1D749 /* InitialPage.swift in Sources */,
 				3360586C289BE9CE00136EB1 /* RecipeViewModel.swift in Sources */,
-				798C3FFE2895B61B0051BF6B /* ContentView.swift in Sources */,
 				79D71D4828970A4300E1D749 /* ProfilePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
