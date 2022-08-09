@@ -12,7 +12,7 @@ struct myRecipeCard: View {
         var recipe: String
         var image: String
         var body: some View {
-            VStack(alignment: .leading, spacing: 12){
+
                 Image("food1")
                     .resizable()
                     .scaledToFit()
@@ -48,10 +48,8 @@ struct myRecipeCard: View {
                 }
                 .padding()
                 .padding(.bottom,12)
-            }
-            .shadow(color: .red, radius: 2, x: 0, y: 0)
-            .padding(.bottom,20)
-            .padding(.top,22)
+            
+       
         }
     }
 

@@ -19,7 +19,7 @@ struct RecipeView: View {
                     }
                 }
             }
-            .frame(height: 350)
+
         }
         .shadow(color: .red, radius: 2, x: 0, y: 0)
         .padding(.bottom,20)
